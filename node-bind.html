@@ -1,0 +1,20 @@
+<DOCTYPE html>
+<html>
+	<head>
+		<script type="text/javascript" src="node-bind.js"></script>
+	</head>
+	<body>
+		<input id="input" value=""></input>
+		<script type="text/javascript">
+			var o = {
+				a: {
+					b: {
+						c: "myValue"
+					}
+				}
+			};
+			var node = document.getElementById("input");
+			node.bind("value", o, "a.b.c");
+		</script>
+	</body>
+</html>
